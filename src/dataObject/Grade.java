@@ -4,7 +4,6 @@ import enumObject.GradeValueEnum;
 
 public class Grade {
 
-  // DECLARATION
   private final String id;
   private final GradeValueEnum value;
   private final String studentId;
@@ -13,7 +12,7 @@ public class Grade {
   private String dateTime;
   private boolean isUpdated = false;
 
-  // CONSTRUCTOR
+
   public Grade(String idArg, GradeValueEnum valueArg, String dateTimeArg, String studentIdArg, String teacherIdArg) {
     this.dateTime = dateTimeArg;
     this.id = idArg;

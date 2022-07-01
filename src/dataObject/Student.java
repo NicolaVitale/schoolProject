@@ -2,18 +2,16 @@ package dataObject;
 
 public class Student {
 
-  // DECLARATION
   private final String id;
   private final String name;
   private final String surname;
   private final String birthDate;
 
-  // CONSTRUCTOR
-  public Student(String idArg, String nameArg, String surnameArg, String birthDateArg) {
-    this.id = idArg;
-    this.name = nameArg;
-    this.surname = surnameArg;
-    this.birthDate = birthDateArg;
+  public Student(String id, String name, String surname, String birthDate) {
+    this.id = id;
+    this.name = name;
+    this.surname = surname;
+    this.birthDate = birthDate;
   }
 
   public String getId() {
@@ -31,6 +29,5 @@ public class Student {
   public String getBirthDate() {
     return birthDate;
   }
-
 
 }

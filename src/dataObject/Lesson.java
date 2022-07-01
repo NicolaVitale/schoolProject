@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Lesson {
 
-  // DECLARATION
   private final String id;
   private final String dateTimeEnd;
   private final String dateTimeStart;
@@ -14,19 +13,17 @@ public class Lesson {
   private final List<String> students;
   private final String teacherId;
 
-  // CONSTRUCTOR
-  public Lesson(String idArg, String dateTimeEndArg, String dateTimeStartArg,
-      SubjectTypeEnum subjectTypeEnum, String classIdArg,
-      String studentIdArg, List<String> students, String teacherIdArg) {
-    this.id = idArg;
-    this.dateTimeEnd = dateTimeEndArg;
-    this.dateTimeStart = dateTimeStartArg;
+  public Lesson(String id, String dateTimeEnd, String dateTimeStart,
+      SubjectTypeEnum subjectTypeEnum, String classId,
+      String studentI, List<String> students, String teacherId) {
+    this.id = id;
+    this.dateTimeEnd = dateTimeEnd;
+    this.dateTimeStart = dateTimeStart;
     this.subjectTypeEnum = subjectTypeEnum;
-    this.classId = classIdArg;
+    this.classId = classId;
     this.students = students;
-    this.teacherId = teacherIdArg;
+    this.teacherId = teacherId;
   }
-
 
   public String getId() {
     return id;
@@ -54,5 +51,9 @@ public class Lesson {
 
   public String getTeacherId() {
     return teacherId;
+  }
+
+  public boolean isStudentAttending(String studentId) {
+    return students.contains(studentId);
   }
 }
