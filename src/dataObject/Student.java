@@ -16,20 +16,21 @@ public class Student {
     this.birthDate = birthDateArg;
   }
 
-  // SELECT
-  public String selectBirthDate() {
-    return this.birthDate;
+  public String getId() {
+    return id;
   }
 
-  public String selectId() {
-    return this.id;
+  public String getName() {
+    return name;
   }
 
-  public String selectName() {
-    return this.name;
+  public String getSurname() {
+    return surname;
   }
 
-  public String selectSurname() {
-    return this.surname;
+  public String getBirthDate() {
+    return birthDate;
   }
+
+
 }

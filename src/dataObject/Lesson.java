@@ -1,48 +1,58 @@
 package dataObject;
 
+import enumObject.SubjectTypeEnum;
+import java.util.List;
+
 public class Lesson {
 
   // DECLARATION
   private final String id;
   private final String dateTimeEnd;
   private final String dateTimeStart;
+  private final SubjectTypeEnum subjectTypeEnum;
   private final String classId;
-  private final String studentId;
+  private final List<String> students;
   private final String teacherId;
 
   // CONSTRUCTOR
-  public Lesson(String idArg, String dateTimeEndArg, String dateTimeStartArg, String classIdArg,
-      String studentIdArg, String teacherIdArg) {
+  public Lesson(String idArg, String dateTimeEndArg, String dateTimeStartArg,
+      SubjectTypeEnum subjectTypeEnum, String classIdArg,
+      String studentIdArg, List<String> students, String teacherIdArg) {
     this.id = idArg;
     this.dateTimeEnd = dateTimeEndArg;
     this.dateTimeStart = dateTimeStartArg;
+    this.subjectTypeEnum = subjectTypeEnum;
     this.classId = classIdArg;
-    this.studentId = studentIdArg;
+    this.students = students;
     this.teacherId = teacherIdArg;
   }
 
-  // SELECT
-  public String selectClassId() {
-    return this.classId;
+
+  public String getId() {
+    return id;
   }
 
-  public String selectDateTimeEnd() {
-    return this.dateTimeEnd;
+  public String getDateTimeEnd() {
+    return dateTimeEnd;
   }
 
-  public String selectDateTimeStart() {
-    return this.dateTimeStart;
+  public String getDateTimeStart() {
+    return dateTimeStart;
   }
 
-  public String selectId() {
-    return this.id;
+  public SubjectTypeEnum getSubjectTypeEnum() {
+    return subjectTypeEnum;
   }
 
-  public String selectStudentId() {
-    return this.studentId;
+  public String getClassId() {
+    return classId;
   }
 
-  public String selectTeacherId() {
-    return this.teacherId;
+  public List<String> getStudents() {
+    return students;
+  }
+
+  public String getTeacherId() {
+    return teacherId;
   }
 }

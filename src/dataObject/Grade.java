@@ -22,37 +22,36 @@ public class Grade {
     this.value = valueArg;
   }
 
-  // SELECT
-  public String selectDateTime() {
-    return this.dateTime;
+
+  public String getId() {
+    return id;
   }
 
-  public String selectId() {
-    return this.id;
+  public GradeValueEnum getValue() {
+    return value;
   }
 
-  public boolean selectIsUpdated() {
-    return this.isUpdated;
+  public String getStudentId() {
+    return studentId;
   }
 
-  public String selectStudentId() {
-    return this.studentId;
+  public String getTeacherId() {
+    return teacherId;
   }
 
-  public String selectTeacherId() {
-    return this.teacherId;
+  public String getDateTime() {
+    return dateTime;
   }
 
-  public GradeValueEnum selectValue() {
-    return this.value;
+  public void setDateTime(String dateTime) {
+    this.dateTime = dateTime;
   }
 
-  // INSERT
-  public void insertDateTime(String dateTimeArg) {
-    this.dateTime = dateTimeArg;
+  public boolean isUpdated() {
+    return isUpdated;
   }
 
-  public void insertUpdated(boolean isUpdatedArg) {
-    this.isUpdated = isUpdatedArg;
+  public void setUpdated(boolean updated) {
+    isUpdated = updated;
   }
 }
